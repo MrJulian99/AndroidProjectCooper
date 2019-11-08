@@ -2,7 +2,9 @@
     <string name="app_name">RateMovie</string>
     <string name="first_title">Welcome to RateMovie !</string>
     <string name="first_button">Show The Latest Movies</string>
-    <string name="movie_rate">Insert Movie Rate</string>
+    <string name="movie_rate_hint">Insert Movie Rate</string>
     <string name="movie1">This is your first movie</string>
+    <string name="movies_title">Movies List</string>
+
 
 </resources>

@@ -34,7 +34,13 @@ public class Movie extends Object {
         this.rate = rate;
     }
 
+    @Override
+    public String toString() {
+        return "Title='" + title + '\'' +
+                ", rate='" + rate + '\'' ;
+    }
 
-
-
+    public boolean isSolved() {
+        return true;
+    }
 }
