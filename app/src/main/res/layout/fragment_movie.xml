@@ -10,16 +10,16 @@
         android:id="@+id/movie_rate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/movie_rate_hint"
-    />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:hint="@string/movie_rate_hint" />
 
     <Button
         android:id="@+id/fragment_button"
         android:layout_width="257dp"
         android:layout_height="77dp"
         android:background="@color/colorPrimary"
-        android:text="This is fragment's button"
-       />
+        android:text="Rate Movie!" />
 
 
 </LinearLayout>

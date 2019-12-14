@@ -1,12 +1,20 @@
 package com.example.ratemovie;
 
+import android.media.Image;
+
+import java.util.Arrays;
 import java.util.UUID;
 
 public class Movie extends Object {
 
+
     private UUID id;
     private String title;
     private String rate;
+    private Integer images[];
+    private int position;
+    private int imgNumber;
+
 
     public Movie(){
 
@@ -34,10 +42,33 @@ public class Movie extends Object {
         this.rate = rate;
     }
 
+    public Integer[] getImages(int position) {
+        return images;
+    }
+
+    public void setImages(Integer[] images) {
+        this.images = images;
+    }
+
+    public void  setImage(int imgNumber){
+
+        this.imgNumber = imgNumber;
+    }
+
+    public int  getImage(int position){
+
+        return position;
+    }
+
+
     @Override
     public String toString() {
-        return "Title='" + title + '\'' +
-                ", rate='" + rate + '\'' ;
+        return "Movie{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", rate='" + rate + '\'' +
+                ", images=" + Arrays.toString(images) +
+                '}';
     }
 
     public boolean isSolved() {
